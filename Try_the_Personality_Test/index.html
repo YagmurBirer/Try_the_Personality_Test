@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz App - Örnek</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" role="main">
+   <i><header>Personality Test</header></i>
+
+    <div class="top-row">
+      <div class="progress-wrap">
+        <div class="qcount" id="qcount">Question 1/5</div>
+        <div class="progress"><span id="progress-bar"></span></div>
+      </div>
+      <div class="score">
+        <div class="label">Score</div>
+        <div class="value" id="score">0</div>
+      </div>
+    </div>
+
+    <div class="question" id="question">Soru buraya gelecek</div>
+
+    <div class="options" id="options">
+      <!-- seçenekler burada oluşturulacak -->
+    </div>
+
+    <div class="controls">
+      <button class="btn btn-ghost" id="prevBtn" disabled>Geri</button>
+      <div style="flex:1"></div>
+      <button class="btn btn-primary" id="nextBtn">Sonraki</button>
+    </div>
+
+    <div class="result" id="result">
+      <div class="result-card">
+        <h2 id="resultTitle">Tebrikler!</h2>
+        <p id="resultText">Puanınız: <strong id="finalScore">0</strong></p>
+        <div style="margin-top:14px;">
+          <button class="btn btn-primary" id="restartBtn">Yeniden Başlat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
